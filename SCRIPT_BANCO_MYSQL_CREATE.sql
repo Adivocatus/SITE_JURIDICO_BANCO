@@ -1,4 +1,4 @@
-CREATE TABLE `TabeleAreaAdministrador` (
+CREATE TABLE `TabelaAreaAdministrador` (
     `idAreaAdminIstrador` INT NOT NULL AUTO_INCREMENT,
     `gerenciarSite` VARCHAR(255) NOT NULL,
     `cadastrarAdvogados` VARCHAR(255) NOT NULL,
@@ -15,8 +15,6 @@ CREATE TABLE `TabelaAdministrador` (
 	`contatoAdministrador` VARCHAR (100)  NOT NULL,
 	PRIMARY KEY(`idAdminIstrador`)
     );
-
-
 
 CREATE TABLE `TabelaAdvogadosAssociados` (
     `idAdvogadosAssociados` INT NOT NULL AUTO_INCREMENT,
@@ -51,14 +49,12 @@ CREATE TABLE `TabelaAreaDoCliente` (
     PRIMARY KEY (`idAreaDoCliente`)
 ) ;
 
-
 CREATE TABLE `TabelaAreaDoUsuario` (
     `idAreadoUsuario` INT NOT NULL AUTO_INCREMENT,
     `HistoricoDeProcesso` VARCHAR(255) NOT NULL,
     `ConfiguracoesDoUsuario` VARCHAR(255) NOT NULL,
     PRIMARY KEY (`idAreadoUsuario`)
 ) ;
-
 
 CREATE TABLE `TabelaAreaDosAdvogadosAssociados` (
     `idAreaDosAdvogadosAssociados` INT NOT NULL AUTO_INCREMENT,
@@ -71,7 +67,6 @@ CREATE TABLE `TabelaAreaDosAdvogadosAssociados` (
     PRIMARY KEY (`idAreaDosAdvogadosAssociados`)
 ) ;
 
-
 CREATE TABLE `TabelaCliente` (
     `idCliente` INT NOT NULL AUTO_INCREMENT,
     `NomeCliente` VARCHAR(100) NOT NULL,
@@ -82,7 +77,6 @@ CREATE TABLE `TabelaCliente` (
     PRIMARY KEY (`idCliente`)
 ) ;
 
-
 CREATE TABLE `TabelaPaginaInicial` (
     `idPaginaInicial` INT NOT NULL AUTO_INCREMENT,
     `MenuComSecoesParaVisualizacaoPaginas` VARCHAR(255) NOT NULL,
@@ -90,7 +84,6 @@ CREATE TABLE `TabelaPaginaInicial` (
     `InformacoesGeraisSobreSite` VARCHAR(500) NOT NULL,
     PRIMARY KEY (`idPaginaInicial`)
 ) ;
-
 
 CREATE TABLE `TabelaSiteJuridico` (
     `idSite` INT NOT NULL AUTO_INCREMENT,
