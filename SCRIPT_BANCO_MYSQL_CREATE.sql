@@ -1,5 +1,5 @@
 CREATE TABLE `TabelaAreaAdministrador` (
-    `idAreaAdminIstrador` INT NOT NULL AUTO_INCREMENT,
+    `idAreaAdministrador` INT NOT NULL AUTO_INCREMENT,
     `gerenciarSite` VARCHAR(255) NOT NULL,
     `cadastrarAdvogados` VARCHAR(255) NOT NULL,
     `realizarReunioesComAequipe` VARCHAR(255) NOT NULL,
@@ -11,9 +11,9 @@ CREATE TABLE `TabelaAreaAdministrador` (
 CREATE TABLE `TabelaAdministrador` (
 	`idAdministrador`	INT NOT NULL AUTO_INCREMENT,
 	`nomeAdministrador`	VARCHAR (100)  NOT NULL,
-    `senhaAdministrador` VARCHAR (15) NOT NULL,
+    	`senhaAdministrador` VARCHAR (15) NOT NULL,
 	`contatoAdministrador` VARCHAR (100)  NOT NULL,
-	PRIMARY KEY(`idAdminIstrador`)
+	PRIMARY KEY(`idAdministrador`)
     );
 
 CREATE TABLE `TabelaAdvogadosAssociados` (
