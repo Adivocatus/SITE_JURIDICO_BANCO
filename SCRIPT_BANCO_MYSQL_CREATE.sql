@@ -1,18 +1,19 @@
 CREATE TABLE `TabelaAreaAdministrador` (
     `idAreaAdministrador` INT NOT NULL AUTO_INCREMENT,
-    `gerenciarSite` VARCHAR(255) NOT NULL,
-    `cadastrarAdvogados` VARCHAR(255) NOT NULL,
-    `realizarReunioesComAequipe` VARCHAR(255) NOT NULL,
-    `elaborarModelosDeContratosPrestacaoServico` VARCHAR(255) NOT NULL,
-    `elaborarFormularioParaOsClientes` VARCHAR(255) NOT NULL,
+    `gerenciarSite` VARCHAR(255) NOT NULL, #####
+    `cadastrarAdvogados` VARCHAR(255) NOT NULL, #####
+    `realizarReunioesComAequipe` VARCHAR(255) NOT NULL, #####
+    `elaborarModelosDeContratosPrestacaoServico` VARCHAR(255) NOT NULL, #####
+    `elaborarFormularioParaOsClientes` VARCHAR(255) NOT NULL, #####
     PRIMARY KEY (`idAreaAdministrador`)
 ) ;
 
 CREATE TABLE `TabelaAdministrador` (
 	`idAdministrador`	INT NOT NULL AUTO_INCREMENT,
 	`nomeAdministrador`	VARCHAR (100)  NOT NULL,
-    	`senhaAdministrador` VARCHAR (15) NOT NULL,
+	`senhaAdministrador` VARCHAR (15) NOT NULL,
 	`contatoAdministrador` VARCHAR (100)  NOT NULL,
+    `registroAdministrador` VARCHAR(100) NOT NULL,
 	PRIMARY KEY(`idAdministrador`)
     );
 
@@ -70,6 +71,7 @@ CREATE TABLE `TabelaAreaDosAdvogadosAssociados` (
 CREATE TABLE `TabelaCliente` (
     `idCliente` INT NOT NULL AUTO_INCREMENT,
     `NomeCliente` VARCHAR(100) NOT NULL,
+    `SenhaCliente` VARCHAR(20) NOT NULL,
     `CPF_Cliente` VARCHAR(14) NOT NULL,
     `EnderecoClientes` VARCHAR(100) NOT NULL,
     `ContatoCliente` VARCHAR(50) NOT NULL,
